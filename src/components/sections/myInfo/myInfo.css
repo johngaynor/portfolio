@@ -33,14 +33,48 @@
   max-width: 100%;
   height: auto;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 5px solid white;
 }
 
 .inner-box {
   height: 250px;
-  background-color: red;
   width: 100%;
   border-radius: 50px;
+  border: 5px solid white;
+}
+
+.big-card .lightblue {
+  background-color: #62929e;
+}
+
+.big-card .blue {
+  background-color: #4a6d7c;
+}
+
+.big-card .greyblue {
+  background-color: #475657;
+}
+
+.card-links {
+  position: absolute;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-links a:hover {
+  color: blue;
+}
+
+.link-icons {
+  margin: 0 40px;
+  height: 25px;
 }
 
 .inner-box h4 {
