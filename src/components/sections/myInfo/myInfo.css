@@ -1,0 +1,50 @@
+.info-container {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.small-cards {
+  aspect-ratio: 3 / 2;
+  height: 300px;
+  background-color: purple;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-card {
+  position: absolute;
+  height: 130px;
+  aspect-ratio: 3/2;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.small-cards:hover .small-card:nth-child(1) {
+  transform: translate(140%, -130%) rotate(17deg);
+  transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+}
+
+.small-cards:hover .small-card:nth-child(2) {
+  transform: translate(140%, 130%) rotate(-17deg);
+  transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+}
+
+.small-cards:hover .small-card:nth-child(3) {
+  transform: translate(-140%, 130%) rotate(17deg);
+  transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+}
+
+.small-cards:hover .small-card:nth-child(4) {
+  transform: translate(-140%, -130%) rotate(-17deg);
+  transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+}
