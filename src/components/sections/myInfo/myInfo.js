@@ -8,6 +8,11 @@ import jungleHome from "../../../assets/images/jungle-home.png";
 import jungleLogin from "../../../assets/images/jungle-login.png";
 import jungleCreate from "../../../assets/images/jungle-create.png";
 import jungleBrowse from "../../../assets/images/jungle-browse.png";
+import eventsyHome from "../../../assets/images/eventsy-home.png";
+import eventsyBlog from "../../../assets/images/eventsy-blog.png";
+import eventsyContact from "../../../assets/images/eventsy-contact.png";
+import eventsyGallery from "../../../assets/images/eventsy-gallery.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleArrowLeft,
@@ -97,26 +102,23 @@ function MyInfo() {
 
       <div className="big-card">
         <div className="small-card">
-          <img src={calFoods} />
+          <img src={eventsyHome} />
         </div>
         <div className="small-card">
-          <img src={calRecipe} />
+          <img src={eventsyBlog} />
         </div>
         <div className="small-card">
-          <img src={calFoods} />
+          <img src={eventsyGallery} />
         </div>
         <div className="small-card">
-          <img src={calRecipeForm} />
+          <img src={eventsyContact} />
         </div>
         <div className="inner-box text-white greyblue">
           <div className="card-links">
             <a href="https://calorietracker.johngaynor.dev" target="_blank">
               <FontAwesomeIcon icon={faLink} className="link-icons" />
             </a>
-            <a
-              href="https://github.com/johngaynor/calorie-tracker.git"
-              target="_blank"
-            >
+            <a href="https://github.com/johngaynor/eventsy.git" target="_blank">
               <FontAwesomeIcon icon={faSquareGithub} className="link-icons" />
             </a>
           </div>
