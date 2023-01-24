@@ -1,23 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MyProjects from "../myProjects/myProjects";
 import AboutMe from "../aboutMe/aboutMe";
 import styles from "./hero.css";
 
 function Hero() {
-  const [activeTab, setActiveTab] = useState("about");
+  const [activeTab, setActiveTab] = useState(0);
 
   const setAbout = () => {
-    setActiveTab("about");
+    setActiveTab(0);
     window.scrollTo(0, document.body.scrollHeight);
   };
   const setProjects = () => {
-    setActiveTab("projects");
+    setActiveTab(1);
     window.scrollTo(1000, document.body.scrollHeight);
   };
-  //   const setAbout = () => {
-  //     setActiveTab("about");
-  //     window.scrollTo(0, document.body.scrollHeight);
-  //   };
+
+  useEffect(() => {
+    const headers = Array.from(document.querySelectorAll(".hero-links h5"));
+    headers.forEach((header, index) => {
+      header.classList.remove("active");
+      if (index === activeTab) {
+        header.classList.add("active");
+      }
+    });
+  }, [activeTab]);
+
   return (
     <>
       <div className="hero-container">

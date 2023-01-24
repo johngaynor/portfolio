@@ -14,7 +14,6 @@
 }
 
 .about-text {
-  /* background-color: red; */
   width: 100%;
   margin-left: 140px;
 }
@@ -33,6 +32,12 @@
 
 .about-text {
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text p {
+  font-size: 16px;
 }
 
 .about-skills {
@@ -41,10 +46,19 @@
   flex-wrap: wrap;
 }
 
+.about-header {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .about-skills span {
   background-color: #020122;
   color: white;
   padding: 5px 10px;
   margin: 0px 3px 10px 3px;
   border-radius: 5px;
+}
+
+.about-text .header-orange-red {
+  color: #ff521b;
 }

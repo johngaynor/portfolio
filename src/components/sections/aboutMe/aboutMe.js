@@ -6,7 +6,7 @@ import styles from "./aboutMe.css";
 function AboutMe(currentTab) {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    if (currentTab.currentTab === "about") {
+    if (currentTab.currentTab === 0) {
       setShow(true);
     } else {
       setShow(false);
@@ -33,6 +33,28 @@ function AboutMe(currentTab) {
                 <span>MVC</span>
                 <span>Node.js</span>
               </div>
+              <h3 className="about-header">
+                An Eye for{" "}
+                <span className="header-orange-red">Optimization</span>
+              </h3>
+              <p className="subtitle pe-4">
+                In my years as a competitive Rubik's Cube solver, I discovered
+                an interest in using technology to optimize human tasks. This
+                branched into a passion for developing applications that make
+                life easier for its users.
+              </p>
+              <p className="subtitle pe-4">
+                This led to me pursuing a degree in Informatics at IUPUI
+                (current sophomore). I have since completed IUPUI's Web & Mobile
+                Development Boot Camp and continue to learn and develop my own
+                projects. I'm still in my early stages as a developer but I
+                believe I have the passion and determination to change the world
+                someday.
+              </p>
+              {/* <p className="subtitle pe-4">
+                Outside of school and coding I spend most of my free time in the
+                gym or developing new skills.
+              </p> */}
             </div>
           </div>
         </div>

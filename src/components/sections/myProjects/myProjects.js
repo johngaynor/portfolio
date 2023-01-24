@@ -25,7 +25,7 @@ import styles from "./myProjects.css";
 function MyProjects(currentTab) {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    if (currentTab.currentTab === "projects") {
+    if (currentTab.currentTab === 1) {
       setShow(true);
     } else {
       setShow(false);
