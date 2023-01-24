@@ -15,16 +15,6 @@
   border-bottom: 2.5px solid #020122;
 }
 
-/* .hero-profile {
-  aspect-ratio: 2/3;
-  width: 150px;
-}
-
-.hero-profile img {
-  height: 100%;
-  border-radius: 50px;
-} */
-
 :root {
   --typewriterSpeed: 2s;
   --typewriterCharacters: 22;

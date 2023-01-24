@@ -1,12 +1,23 @@
-import pfp from "../../../assets/images/gaynor-pfp.JPEG";
+import { useState } from "react";
 import MyProjects from "../myProjects/myProjects";
 import AboutMe from "../aboutMe/aboutMe";
 import styles from "./hero.css";
 
 function Hero() {
-  const scrollBottom = () => {
+  const [activeTab, setActiveTab] = useState("about");
+
+  const setAbout = () => {
+    setActiveTab("about");
     window.scrollTo(0, document.body.scrollHeight);
   };
+  const setProjects = () => {
+    setActiveTab("projects");
+    window.scrollTo(1000, document.body.scrollHeight);
+  };
+  //   const setAbout = () => {
+  //     setActiveTab("about");
+  //     window.scrollTo(0, document.body.scrollHeight);
+  //   };
   return (
     <>
       <div className="hero-container">
@@ -17,14 +28,14 @@ function Hero() {
             applications.
           </h1>
           <div className="hero-links d-flex justify-content-between">
-            <h5 onClick={scrollBottom}>ABOUT</h5>
-            <h5>PROJECTS</h5>
+            <h5 onClick={setAbout}>ABOUT</h5>
+            <h5 onClick={setProjects}>PROJECTS</h5>
             <h5>CONNECT</h5>
           </div>
         </div>
       </div>
-      <AboutMe></AboutMe>
-      {/* <MyProjects></MyProjects> */}
+      <AboutMe currentTab={activeTab}></AboutMe>
+      <MyProjects currentTab={activeTab}></MyProjects>
     </>
   );
 }
