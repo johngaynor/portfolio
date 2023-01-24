@@ -1,0 +1,13 @@
+.about-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #020122;
+}
+
+.about-box {
+  height: 60vh;
+  background-color: white;
+  border-radius: 50px;
+}
