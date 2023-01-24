@@ -1,6 +1,6 @@
 .info-container {
-  height: 100vh;
-  background-color: black;
+  height: 90vh;
+  background-color: #020122;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,15 +9,47 @@
   flex-direction: column;
 }
 
+.big-card-group {
+  aspect-ratio: 3/2;
+  height: 250px;
+}
+
 .big-card {
   aspect-ratio: 3 / 2;
   height: 250px;
   background-color: white;
   border-radius: 50px;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 400ms ease;
+}
+
+.big-card[data-status="unknown"] {
+  transform: scale(0);
+}
+
+.big-card[data-status="active"] {
+  transition-delay: 300ms;
+}
+
+.big-card[data-status="after"] {
+  transform: translate(100%, 50%) scale(0);
+}
+
+.big-card[data-status="before"] {
+  transform: translate(-100%, 50%) scale(0);
+}
+
+.big-card[data-status="becoming-active-from-before"] {
+  transform: translate(-100%, 50%) scale(0);
+  transition: none;
+}
+
+.big-card[data-status="becoming-active-from-after"] {
+  transform: translate(100%, 50%) scale(0);
+  transition: none;
 }
 
 .small-card {
@@ -43,16 +75,16 @@
   border: 5px solid white;
 }
 
-.big-card .lightblue {
-  background-color: #62929e;
+.big-card .red-orange {
+  background-color: #ff521b;
 }
 
-.big-card .blue {
-  background-color: #4a6d7c;
+.big-card .orange {
+  background-color: #fc9e4f;
 }
 
-.big-card .greyblue {
-  background-color: #475657;
+.big-card .yellow {
+  background-color: #edd382;
 }
 
 .card-links {
@@ -69,7 +101,7 @@
 }
 
 .card-links a:hover {
-  color: blue;
+  color: #6495ed;
 }
 
 .link-icons {
@@ -85,6 +117,19 @@
 .card-arrows {
   margin: 20px;
   height: 40px;
+  position: relative;
+}
+
+.card-arrows:active {
+  top: 5px;
+}
+
+.info-container .next:hover {
+  color: #90ef90;
+}
+
+.info-container .previous:hover {
+  color: #fc8c85;
 }
 
 .big-card:hover .small-card:nth-child(1) {

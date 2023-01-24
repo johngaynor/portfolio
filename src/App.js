@@ -1,12 +1,14 @@
 import "./App.css";
 import Navigation from "./components/nav/nav";
-import MyInfo from "./components/sections/myInfo/myInfo";
+import Hero from "./components/sections/hero/hero";
+import MyProjects from "./components/sections/myProjects/myProjects";
 
 function App() {
   return (
     <>
-      <Navigation></Navigation>
-      <MyInfo></MyInfo>
+      <Hero></Hero>
+      <MyProjects></MyProjects>
+      <MyProjects></MyProjects>
     </>
   );
 }
