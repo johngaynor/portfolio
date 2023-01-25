@@ -1,26 +1,79 @@
 .hero-container {
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #020122;
+  flex-direction: column;
+  color: white;
+  background-color: #020122;
 }
 
-.hero-links {
-  margin: 70px auto -40px auto;
+.hero-container .hero-icons {
+  color: #ff521b;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.hero-container .closing-tag {
+  font-size: 80px;
+  right: 20%;
+  top: 50%;
+  transform: rotate(36deg);
+}
+
+.hero-container .code-branch {
+  font-size: 60px;
+  top: 10%;
+  transform: rotate(-20deg);
+}
+
+.hero-container .code-commit {
+  font-size: 50px;
+  top: 16%;
+  right: 28%;
+  transform: rotate(20deg);
+}
+
+.hero-container .code-file {
+  font-size: 50px;
+  top: 65%;
+  right: 40%;
+  transform: rotate(-10deg);
+}
+
+.hero-container .icon-weight {
+  font-size: 60px;
+  left: 30%;
+  top: 70%;
+  transform: rotate(20deg);
+}
+
+.hero-container .hero-links {
+  width: 40%;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  justify-content: space-around;
   height: 35px;
 }
 
-.hero-links .active {
-  border-bottom: 2.5px solid #020122;
+.hero-links h5 {
+  font-weight: bolder;
+}
+
+.hero-container h4 {
+  color: #ff521b;
+  position: absolute;
+  bottom: 5%;
 }
 
 .hero-container h5:hover {
-  border-bottom: 2.5px solid #020122;
+  color: #ff521b;
 }
 
 :root {
-  --typewriterSpeed: 2s;
+  --typewriterSpeed: 1s;
   --typewriterCharacters: 22;
 }
 
@@ -42,14 +95,13 @@ h3::after {
 }
 
 h3::before {
-  background: white;
+  background: #020122;
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h3::after {
   width: 0.125em;
-  background: black;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
@@ -58,8 +110,17 @@ h3::after {
 .subtitle {
   width: 100%;
   opacity: 0;
+  font-size: 60px;
   transform: translateY(3rem);
   animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1.5s) forwards;
+}
+
+.subtitles .middle {
+  margin: 30px auto;
+}
+
+.subtitles .smaller {
+  font-size: 20px;
 }
 
 .subtitle span {

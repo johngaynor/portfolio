@@ -1,55 +1,25 @@
 .info-container {
-  height: 90vh;
+  min-height: 100px;
   background-color: #020122;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 4;
-  flex-direction: column;
-}
-
-.big-card-group {
-  aspect-ratio: 3/2;
-  height: 250px;
 }
 
 .big-card {
   aspect-ratio: 3 / 2;
   height: 250px;
-  background-color: white;
-  border-radius: 50px;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 400ms ease;
+  border-radius: 20px;
+  margin: 130px auto;
 }
 
-.big-card[data-status="unknown"] {
-  transform: scale(0);
-}
-
-.big-card[data-status="active"] {
-  transition-delay: 300ms;
-}
-
-.big-card[data-status="after"] {
-  transform: translate(100%, 50%) scale(0);
-}
-
-.big-card[data-status="before"] {
-  transform: translate(-100%, 50%) scale(0);
-}
-
-.big-card[data-status="becoming-active-from-before"] {
-  transform: translate(-100%, 50%) scale(0);
-  transition: none;
-}
-
-.big-card[data-status="becoming-active-from-after"] {
-  transform: translate(100%, 50%) scale(0);
-  transition: none;
+.big-card:nth-child(1) {
+  margin-top: 50px;
 }
 
 .small-card {
@@ -57,22 +27,23 @@
   height: 110px;
   aspect-ratio: 4.1/2;
   background-color: white;
-  border-radius: 20px;
   z-index: -1;
+  border-radius: 5px;
 }
 
 .small-card img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
-  border: 5px solid white;
+  border-radius: 5px;
+  border: 3px solid white;
 }
 
 .inner-box {
   height: 250px;
   width: 100%;
-  border-radius: 50px;
-  border: 5px solid white;
+  border: 3px solid white;
+  border-radius: 20px;
+  position: relative;
 }
 
 .big-card .red-orange {
@@ -112,24 +83,6 @@
 .inner-box h4 {
   margin-top: 10px;
   text-align: center;
-}
-
-.card-arrows {
-  margin: 20px;
-  height: 40px;
-  position: relative;
-}
-
-.card-arrows:active {
-  top: 5px;
-}
-
-.info-container .next:hover {
-  color: #90ef90;
-}
-
-.info-container .previous:hover {
-  color: #fc8c85;
 }
 
 .big-card:hover .small-card:nth-child(1) {

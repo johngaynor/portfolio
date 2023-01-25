@@ -1,21 +1,21 @@
 .about-container {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #020122;
+  color: white;
+  flex-direction: column;
 }
 
 .about-box {
   height: 375px;
-  background-color: white;
-  border-radius: 50px;
   display: flex;
+  margin-bottom: 80px;
 }
 
 .about-text {
-  width: 100%;
-  margin-left: 140px;
+  margin-left: 200px;
 }
 
 .about-profile {
@@ -26,8 +26,8 @@
 
 .about-profile img {
   height: 100%;
-  border-radius: 50px;
-  border: 5px solid white;
+  border-radius: 20px;
+  border: 3px solid #ff521b;
 }
 
 .about-text {
@@ -49,16 +49,33 @@
 .about-header {
   font-size: 20px;
   margin-top: 20px;
+  font-size: 40px;
+}
+
+.about-container h2 {
+  margin-top: -70px;
+}
+
+.about-container .about-small-text span {
+  font-size: 25px;
 }
 
 .about-skills span {
-  background-color: #020122;
+  background-color: #ff521b;
   color: white;
   padding: 5px 10px;
   margin: 0px 3px 10px 3px;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 .about-text .header-orange-red {
   color: #ff521b;
+}
+
+.about-container h4 {
+  color: #ff521b;
+  position: absolute;
+  bottom: -95%;
+  left: 13%;
 }
