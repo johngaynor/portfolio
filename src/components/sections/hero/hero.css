@@ -226,4 +226,62 @@ h3::after {
   .hero-container h1 {
     font-size: 45px;
   }
+
+  .hero-container .closing-tag {
+    right: 10%;
+    top: 50%;
+  }
+
+  .hero-container .code-branch {
+    top: 10%;
+    right: 35%;
+  }
+
+  .hero-container .code-commit {
+    top: 19%;
+    right: 15%;
+  }
+
+  .hero-container .code-file {
+    top: 80%;
+    right: 30%;
+  }
+
+  .hero-container .icon-weight {
+    left: 35%;
+    top: 75%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hero-container h1 {
+    font-size: 34px;
+  }
+
+  .hero-container h3 {
+    font-size: 20px;
+  }
+
+  .subtitles .smaller {
+    font-size: 15px;
+  }
+
+  .hero-container .code-branch {
+    top: 50%;
+    right: 50%;
+  }
+
+  .hero-container .code-file {
+    top: 70%;
+    right: 30%;
+  }
+
+  .hero-container .icon-weight {
+    left: 20%;
+    top: 65%;
+  }
+
+  #nav-bars {
+    padding-left: 85%;
+  }
 }

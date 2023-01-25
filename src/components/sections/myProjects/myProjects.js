@@ -22,7 +22,7 @@ import styles from "./myProjects.css";
 function MyProjects() {
   return (
     <div className="info-container pt-5">
-      <div className="w-75">
+      <div className="w-sm-75">
         <div className="big-card mx-auto">
           <div className="small-card">
             <img src={calDash} />

@@ -165,3 +165,35 @@
     transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .big-card {
+    aspect-ratio: 1/1;
+    height: 300px;
+    margin: 100px auto;
+  }
+
+  .big-card:nth-child(1) {
+    margin-top: 70px;
+  }
+
+  .big-card:hover .small-card:nth-child(1) {
+    transform: translate(55%, -230%) rotate(5deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(2) {
+    transform: translate(55%, 230%) rotate(-5deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(3) {
+    transform: translate(-55%, 230%) rotate(5deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(4) {
+    transform: translate(-55%, -230%) rotate(-5deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+}

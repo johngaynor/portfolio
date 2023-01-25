@@ -1,0 +1,24 @@
+.footer-holder {
+  height: 50px;
+  background-color: #020122;
+  color: white;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.footer-holder a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-holder a:hover {
+  color: #ff521b;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-holder {
+    padding: 0 25px;
+  }
+}
