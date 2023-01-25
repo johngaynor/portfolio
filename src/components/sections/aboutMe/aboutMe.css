@@ -157,10 +157,14 @@
 
 @media screen and (max-width: 450px) {
   .about-container {
-    height: 180vh;
+    height: 140vh;
   }
 
   .about-profile {
-    margin-top: -70px;
+    margin-top: -10px;
+  }
+
+  .about-profile {
+    height: 30%;
   }
 }
