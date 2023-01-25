@@ -221,3 +221,9 @@ h3::after {
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 765px) {
+  .hero-container h1 {
+    font-size: 45px;
+  }
+}

@@ -38,9 +38,11 @@ function AboutMe() {
         </div>
       </div>
 
-      <h4>
-        My Projects <FontAwesomeIcon icon={faArrowDown} className="mx-2" />
-      </h4>
+      <div className="w-75">
+        <h4>
+          My Projects <FontAwesomeIcon icon={faArrowDown} className="mx-2" />
+        </h4>
+      </div>
     </div>
   );
 }

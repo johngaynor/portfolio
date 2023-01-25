@@ -104,3 +104,64 @@
   transform: translate(-120%, -120%) rotate(-17deg);
   transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
 }
+
+@media screen and (max-width: 820px) {
+  .big-card {
+    margin: 170px auto;
+  }
+  .big-card:nth-child(1) {
+    margin-top: 100px;
+  }
+  .big-card:hover .small-card:nth-child(1) {
+    transform: translate(80%, -150%) rotate(17deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(2) {
+    transform: translate(80%, 150%) rotate(-17deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(3) {
+    transform: translate(-80%, 150%) rotate(17deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(4) {
+    transform: translate(-80%, -150%) rotate(-17deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .big-card {
+    height: 200px;
+    aspect-ratio: none;
+    font-size: 14px;
+    margin: 230px auto;
+  }
+
+  .small-card {
+    height: 80px;
+  }
+
+  .big-card:hover .small-card:nth-child(1) {
+    transform: translate(90%, -200%) rotate(22deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(2) {
+    transform: translate(90%, 200%) rotate(-22deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(3) {
+    transform: translate(-90%, 200%) rotate(22deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .big-card:hover .small-card:nth-child(4) {
+    transform: translate(-90%, -200%) rotate(-22deg);
+    transition: 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+}
