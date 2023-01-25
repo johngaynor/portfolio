@@ -15,6 +15,7 @@ function Hero() {
     window.scrollTo(1000, document.body.scrollHeight);
   };
 
+  //   adding an underline to the active tab
   useEffect(() => {
     const headers = Array.from(document.querySelectorAll(".hero-links h5"));
     headers.forEach((header, index) => {

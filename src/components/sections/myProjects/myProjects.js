@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 // this area is for images
+import calDash from "../../../assets/images/cal-dash.png";
 import calRecipeForm from "../../../assets/images/cal-recipe-form.png";
 import calRecipe from "../../../assets/images/cal-recipe.png";
 import calFoods from "../../../assets/images/cal-foods.png";
@@ -78,7 +79,7 @@ function MyProjects(currentTab) {
           <div className="big-card-group">
             <div className="big-card" data-index="0" data-status="active">
               <div className="small-card">
-                <img src={calFoods} />
+                <img src={calDash} />
               </div>
               <div className="small-card">
                 <img src={calRecipe} />
