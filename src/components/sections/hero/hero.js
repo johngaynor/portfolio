@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MyProjects from "../myProjects/myProjects";
 import AboutMe from "../aboutMe/aboutMe";
+import Footer from "../../footer/footer";
 import styles from "./hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,20 +14,80 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const setAbout = () => {
-    setActiveTab(0);
-    window.scrollTo(0, document.body.scrollHeight);
+  const scrollToAbout = () => {
+    const about = document.getElementById("about");
+    about.scrollIntoView();
   };
-  const setProjects = () => {
-    setActiveTab(1);
-    window.scrollTo(1000, document.body.scrollHeight);
+
+  const scrollToProjects = () => {
+    const myProjects = document.getElementById("my-projects");
+    myProjects.scrollIntoView();
+  };
+
+  const extendNav = () => {
+    const navClasses = Array.from(
+      document.getElementById("nav-bars").classList
+    );
+    const navClass = document.getElementById("nav-bars");
+    if (navClasses.includes("active")) {
+      navClass.classList.remove("active");
+    } else {
+      navClass.classList.add("active");
+    }
   };
 
   return (
     <>
       <div className="hero-container">
+        <div className="hero-links d-md-flex d-none">
+          <h5
+            onClick={() => {
+              scrollToAbout();
+            }}
+          >
+            ABOUT
+          </h5>
+          <h5
+            onClick={() => {
+              scrollToProjects();
+            }}
+          >
+            PROJECTS
+          </h5>
+          <h5>
+            <a href="https://dot.cards/john_gaynor" target="_blank">
+              CONNECT
+            </a>
+          </h5>
+        </div>
+        <div className="d-block d-md-none">
+          <div id="nav-bars" onClick={extendNav}>
+            <span className="nav-bar"></span>
+            <span className="nav-bar"></span>
+            <span className="nav-bar"></span>
+            <div className="hamburger-links">
+              <h5
+                onClick={() => {
+                  scrollToAbout();
+                }}
+              >
+                ABOUT
+              </h5>
+              <h5
+                onClick={() => {
+                  scrollToProjects();
+                }}
+              >
+                PROJECTS
+              </h5>
+              <h5>
+                <a href="https://dot.cards/john_gaynor" target="_blank">
+                  CONNECT
+                </a>
+              </h5>
+            </div>
+          </div>
+        </div>
         <FontAwesomeIcon icon={faCode} className="hero-icons closing-tag" />
         <FontAwesomeIcon
           icon={faCodeBranch}
@@ -38,11 +99,7 @@ function Hero() {
         />
         <FontAwesomeIcon icon={faFileCode} className="hero-icons code-file" />
         <FontAwesomeIcon icon={faDumbbell} className="hero-icons icon-weight" />
-        <div className="hero-links">
-          <h5 onClick={setAbout}>ABOUT</h5>
-          <h5 onClick={setProjects}>PROJECTS</h5>
-          <h5>CONNECT</h5>
-        </div>
+
         <div className="w-75 subtitles">
           <h3>Hey, I'm John Gaynor.</h3>
           <h1 className="subtitle middle">
@@ -57,8 +114,13 @@ function Hero() {
           </h4>
         </div>
       </div>
-      <AboutMe></AboutMe>
-      <MyProjects currentTab={activeTab}></MyProjects>
+      <div id="about">
+        <AboutMe></AboutMe>
+      </div>
+      <div id="my-projects">
+        <MyProjects></MyProjects>
+      </div>
+      <Footer></Footer>
     </>
   );
 }

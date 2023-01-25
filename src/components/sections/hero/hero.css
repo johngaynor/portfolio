@@ -8,6 +8,92 @@
   background-color: #020122;
 }
 
+.hero-container .hero-links {
+  width: 40%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  justify-content: space-around;
+  height: 35px;
+}
+
+#nav-bars {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding-left: 90%;
+  padding-top: 20px;
+}
+
+#nav-bars .hamburger-links {
+  display: none;
+}
+
+.nav-bar {
+  display: block;
+  width: 30px;
+  margin: 6px 0;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-bars.active {
+  min-height: 100px;
+  z-index: 10;
+  background-color: #020122;
+}
+
+#nav-bars.active .hamburger-links {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: #020122;
+  flex-direction: column;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-links h5 {
+  margin: 20px auto;
+}
+
+.hamburger-links h5:hover {
+  color: #ff521b;
+}
+
+.hamburger-links h5:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.hamburger-links #nav-bars.active .nav-bar {
+  background-color: #ff521b;
+}
+
+#nav-bars.active .nav-bar:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-bars.active .nav-bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#nav-bars.active .nav-bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.hero-container h5 a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-container h5 a:hover {
+  color: #ff521b;
+}
+
 .hero-container .hero-icons {
   color: #ff521b;
   position: absolute;
@@ -46,16 +132,6 @@
   left: 30%;
   top: 70%;
   transform: rotate(20deg);
-}
-
-.hero-container .hero-links {
-  width: 40%;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  justify-content: space-around;
-  height: 35px;
 }
 
 .hero-links h5 {

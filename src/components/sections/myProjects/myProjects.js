@@ -15,11 +15,7 @@ import eventsyContact from "../../../assets/images/eventsy-contact.png";
 import eventsyGallery from "../../../assets/images/eventsy-gallery.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
-  faLink,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "./myProjects.css";
 
