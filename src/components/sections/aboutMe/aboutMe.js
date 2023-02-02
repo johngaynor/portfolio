@@ -8,7 +8,7 @@ import styles from "./aboutMe.css";
 function AboutMe() {
   return (
     <div className="about-container">
-      <div className="about-box w-75">
+      <div className="about-box p-xl-5">
         <div className="about-profile">
           <img src={pfp} alt="" />
         </div>
