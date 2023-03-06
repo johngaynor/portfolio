@@ -6,6 +6,9 @@ import calRecipeForm from "../../../assets/images/cal-recipe-form.png";
 import calRecipe from "../../../assets/images/cal-recipe.png";
 import calFoods from "../../../assets/images/cal-foods.png";
 import chatHome from "../../../assets/images/catfish-home.png";
+import chatCreate from "../../../assets/images/catfish-create.png";
+import chatDash from "../../../assets/images/catfish-dashboard.png";
+import chatChat from "../../../assets/images/catfish-chat.png";
 import jungleHome from "../../../assets/images/jungle-home.png";
 import jungleLogin from "../../../assets/images/jungle-login.png";
 import jungleCreate from "../../../assets/images/jungle-create.png";
@@ -64,13 +67,13 @@ function MyProjects() {
             <img src={chatHome} />
           </div>
           <div className="small-card">
-            <img src={calRecipe} />
+            <img src={chatCreate} />
           </div>
           <div className="small-card">
-            <img src={calFoods} />
+            <img src={chatDash} />
           </div>
           <div className="small-card">
-            <img src={calRecipeForm} />
+            <img src={chatChat} />
           </div>
           <div className="inner-box text-white red-orange">
             <div className="card-links">
