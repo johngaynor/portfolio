@@ -5,6 +5,7 @@ import calDash from "../../../assets/images/cal-dash.png";
 import calRecipeForm from "../../../assets/images/cal-recipe-form.png";
 import calRecipe from "../../../assets/images/cal-recipe.png";
 import calFoods from "../../../assets/images/cal-foods.png";
+import chatHome from "../../../assets/images/catfish-home.png";
 import jungleHome from "../../../assets/images/jungle-home.png";
 import jungleLogin from "../../../assets/images/jungle-login.png";
 import jungleCreate from "../../../assets/images/jungle-create.png";
@@ -36,7 +37,7 @@ function MyProjects() {
           <div className="small-card">
             <img src={calRecipeForm} />
           </div>
-          <div className="inner-box text-white red-orange">
+          <div className="inner-box text-white red">
             <div className="card-links">
               <a href="https://calorietracker.johngaynor.dev" target="_blank">
                 <FontAwesomeIcon icon={faLink} className="link-icons" />
@@ -53,8 +54,42 @@ function MyProjects() {
             <ul className="mx-5">
               <li>Submit foods/recipes, calculates macros in a daily log</li>
               <li>React/Firebase (Realtime)</li>
-              <li>Javascript</li>
+              <li>JavaScript</li>
               <li>HTML/CSS/Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+        <div className="big-card mx-auto">
+          <div className="small-card">
+            <img src={chatHome} />
+          </div>
+          <div className="small-card">
+            <img src={calRecipe} />
+          </div>
+          <div className="small-card">
+            <img src={calFoods} />
+          </div>
+          <div className="small-card">
+            <img src={calRecipeForm} />
+          </div>
+          <div className="inner-box text-white red-orange">
+            <div className="card-links">
+              <a href="https://catfish-alpha.vercel.app" target="_blank">
+                <FontAwesomeIcon icon={faLink} className="link-icons" />
+              </a>
+              <a
+                href="https://github.com/johngaynor/catfish.git"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faSquareGithub} className="link-icons" />
+              </a>
+            </div>
+            <h4>Chatfish</h4>
+            <p className="text-center">Timeframe: 1 week</p>
+            <ul className="mx-5">
+              <li>Create a profile, chat with users in a random chatroom</li>
+              <li>Next.js/Firebase</li>
+              <li>User Authentification, Firestore, Realtime</li>
             </ul>
           </div>
         </div>

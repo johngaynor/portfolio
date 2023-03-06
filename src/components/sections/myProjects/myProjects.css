@@ -46,8 +46,11 @@
   position: relative;
 }
 
-.big-card .red-orange {
+.big-card .red {
   background-color: #ff521b;
+}
+
+.big-card .red-orange {
 }
 
 .big-card .orange {
